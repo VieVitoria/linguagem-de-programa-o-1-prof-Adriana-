@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #DBCFBE;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.menu.Atividade2Controller">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="30.0" prefHeight="640.0" prefWidth="700.0" style="-fx-background-color: #4d290b; -fx-background-radius: 10;">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="14.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <Label text="CLASSES E OBJETOS" textFill="#e4e1e1">
+                     <font><Font name="Georgia" size="30.0" /></font>
+                  </Label>
+                  <Label text="ESCOLHA UMA CLASSE" textFill="#e4e1e1">
+                     <font><Font name="Constantia" size="14.0" /></font>
+                  </Label>
+
+                  <Label text="IMAGEM 1 - LOJA DE ROUPAS" textFill="#e4e1e1">
+                     <font><Font name="Constantia" size="14.0" /></font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button onAction="#abrirLojaRoupas" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="LOJA DE ROUPAS" />
+                        <Button onAction="#abrirTerno" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="TERNO" />
+                        <Button onAction="#abrirCamisa" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="CAMISA" />
+                     </children>
+                  </HBox>
+
+                  <Label text="IMAGEM 2 - ATRAÇÕES TURÍSTICAS" textFill="#e4e1e1">
+                     <font><Font name="Constantia" size="14.0" /></font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button onAction="#abrirAtracaoTuristica" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="ATRAÇÃO TURÍSTICA" />
+                        <Button onAction="#abrirPasseio" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="PASSEIO" />
+                        <Button onAction="#abrirGuiaTuristico" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="GUIA TURÍSTICO" />
+                     </children>
+                  </HBox>
+
+                  <Label text="IMAGEM 3 - ARTE AFRICANA" textFill="#e4e1e1">
+                     <font><Font name="Constantia" size="14.0" /></font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button onAction="#abrirMascara" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="MÁSCARA" />
+                        <Button onAction="#abrirEscultura" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="ESCULTURA" />
+                        <Button onAction="#abrirTambor" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="TAMBOR" />
+                     </children>
+                  </HBox>
+
+                  <Label text="IMAGEM 4 - MANGÁ E ANIME" textFill="#e4e1e1">
+                     <font><Font name="Constantia" size="14.0" /></font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button onAction="#abrirPersonagemManga" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="PERSONAGEM DE MANGÁ" />
+                        <Button onAction="#abrirManga" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="MANGÁ" />
+                        <Button onAction="#abrirMangaka" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="MANGAKÁ" />
+                     </children>
+                  </HBox>
+
+                  <Button onAction="#voltarMenu" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="VOLTAR" />
+                  <Label text="Linguagem de programação" textFill="#e4e1e1">
+                     <font><Font name="Century Gothic" size="12.0" /></font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

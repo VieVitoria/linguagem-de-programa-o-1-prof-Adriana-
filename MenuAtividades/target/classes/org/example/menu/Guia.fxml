@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #DBCFBE;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.menu.Atividade2Controller">
+    <children>
+        <AnchorPane layoutX="50.0" layoutY="30.0" prefHeight="640.0" prefWidth="700.0" style="-fx-background-color: #4d290b; -fx-background-radius: 10;">
+            <children>
+                <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="15.0">
+                    <children>
+                        <Label text="GUIA TURÍSTICO" textFill="#e4e1e1">
+                            <font><Font name="Georgia" size="30.0" /></font>
+                        </Label>
+                        <Label text="ATRIBUTOS" textFill="#e4e1e1">
+                            <font><Font name="Constantia" size="14.0" /></font>
+                        </Label>
+                        <TextField fx:id="tfNome" maxWidth="360.0" promptText="Nome" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b; -fx-prompt-text-fill: #8a7a68;" />
+                        <TextField fx:id="tfIdioma" maxWidth="360.0" promptText="Idioma" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b; -fx-prompt-text-fill: #8a7a68;" />
+                        <TextField fx:id="tfAnosExperiencia" maxWidth="360.0" promptText="Anos de experiência" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b; -fx-prompt-text-fill: #8a7a68;" />
+                        <Button onAction="#criar" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="CRIAR" />
+                        <Label text="MÉTODOS" textFill="#e4e1e1">
+                            <font><Font name="Constantia" size="14.0" /></font>
+                        </Label>
+                        <Button onAction="#apresentar" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="APRESENTAR" />
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <TextField fx:id="tfConduzirGrupo" prefWidth="200.0" promptText="Nº de pessoas" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b; -fx-prompt-text-fill: #8a7a68;" />
+                                <Button onAction="#conduzirGrupo" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="CONDUZIR GRUPO" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <TextField fx:id="tfTrocarIdioma" prefWidth="200.0" promptText="Novo idioma" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b; -fx-prompt-text-fill: #8a7a68;" />
+                                <Button onAction="#trocarIdioma" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="TROCAR IDIOMA" />
+                            </children>
+                        </HBox>
+                        <TextArea fx:id="taSaida" editable="false" style="-fx-control-inner-background: #DBCFBE; -fx-text-fill: #4d290b;" wrapText="true" VBox.vgrow="ALWAYS" />
+                        <Button onAction="#voltar" prefHeight="35.0" prefWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #DBCFBE;" textFill="#4d290b" text="VOLTAR" />
+                        <Label text="Linguagem de programação" textFill="#e4e1e1">
+                            <font><Font name="Century Gothic" size="12.0" /></font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

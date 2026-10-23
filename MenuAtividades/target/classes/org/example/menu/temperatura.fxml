@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700" prefWidth="800" style="-fx-background-color: #DBCFBE;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.menu.temperatura">
+
+    <VBox alignment="CENTER" layoutX="30.0" layoutY="44.0" prefHeight="613.0" prefWidth="741.0" spacing="18" style="-fx-background-color: #4d290b; -fx-background-radius: 10; -fx-padding: 35;">
+
+        <Label style="-fx-text-fill: white; -fx-font-size: 25px;" text="TEMPERATURAS DO ANO" />
+
+        <Label style="-fx-text-fill: #DBCFBE;" text="São José dos Campos" />
+
+        <Button onAction="#mostrarTemperaturas" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b;" text="MOSTRAR TEMPERATURAS" />
+
+        <ScrollPane fitToWidth="true" prefHeight="300">
+            <content>
+                <Label fx:id="lblResultado" style="-fx-padding: 10; -fx-font-size: 14px;" wrapText="true" />
+            </content>
+        </ScrollPane>
+
+        <Button onAction="#voltar" style="-fx-background-color: #DBCFBE; -fx-text-fill: #4d290b;" text="VOLTAR" />
+    </VBox>
+</AnchorPane>
